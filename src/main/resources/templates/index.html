@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+            xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Export Data</title>
+</head>
+<body>
+<form th:action="@{/register}" method="post">
+    <label for="firstName">FirstName :</label>
+    <input type="text" id="firstName" name="firstName" placeholder="firstName">
+    <label for="lastName">LastName :</label>
+    <input type="text" id="lastName" name="lastName" placeholder="lastName">
+    <input type="submit" value="Save">
+</form>
+
+<h2>Export Data</h2>
+<a href="/export/pdf" target="_blank">Export as PDF</a>
+<a href="/export/csv" target="_blank">Export as CSV</a>
+<a href="/export/xlsx" target="_blank">Export as XLSX</a>
+<a href="/export/slx" target="_blank">Export as SLX</a>
+</body>
+</html>
